@@ -5,8 +5,8 @@ Empty strings exists in postfix in prefix wordlists, So list for formula without
 
 ### usage: ApiWordlistGen.py [-h] [--format FORMAT] [--out OUT] formula  
 
-#### Args
-##### formula
+
+### formula
 ApiWordlistGen support schemes in format "vpnfbni,vn,vnBbI", where:  
 - v - word from verb wordlist  
 - p - word from prefix wordlist  
@@ -17,17 +17,17 @@ ApiWordlistGen support schemes in format "vpnfbni,vn,vnBbI", where:
 - b - word from by wordlist  
 - I - word "Id"  
 
-##### -h, --help  
+### -h, --help  
 show this help message and exit  
-##### --format FORMAT, -f FORMAT  
+### --format FORMAT, -f FORMAT  
 Define style of generated words.  
 Possible values:  
 - camel -> GetCustomerNameById  
 - lower_chain -> get_customer_name_by_id  
 - camel_chain -> Get_Customer_Name_By_Id  
 - upper_chain -> GET_CUSTOMER_NAME_BY_ID  
-##### --out OUT, -o OUT     Name of generated file  
+### --out OUT, -o OUT     Name of generated file  
 
-###### Example:  
+### Example:  
 python ApiWordlistGen.py -f camel -o out.txt vpnfbni,vn,vnBbI  
 
