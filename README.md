@@ -1,12 +1,12 @@
 ## Generate wordlists for API fuzzing from basic wordlists 
 
-ApiWordlistGen generates wordlist that contains concatinations of all word combinations that matches formula. If more than one formula separated by comma are specifed, ApiWordlistGen generate one merged list.  
-Empty strings exists in postfix in prefix wordlists, So list for formula without "p" or "f" is subset of list for formula with "p" or "f".  
+ApiWordlistGen generates wordlist that contains concatinations of all word combinations that matches schema. If more than one schema separated by comma are specifed, ApiWordlistGen generate one merged list.  
+Empty strings exists in postfix in prefix wordlists, So list for formula without "p" or "f" is subset of list for schema with "p" or "f".  
 
-### usage: ApiWordlistGen.py [-h] [--format FORMAT] [--out OUT] formula  
+### usage: ApiWordlistGen.py [-h] [--format FORMAT] [--out OUT] schema  
 
 
-### formula
+### Schemas
 ApiWordlistGen support schemes in format "vpnfbni,vn,vnBbI", where:  
 - v - word from verb wordlist  
 - p - word from prefix wordlist  
@@ -18,9 +18,9 @@ ApiWordlistGen support schemes in format "vpnfbni,vn,vnBbI", where:
 - I - word "Id"  
 
 ### -h, --help  
-show this help message and exit  
+show help
 ### --format FORMAT, -f FORMAT  
-Define style of generated words.  
+Define style of generated wordlist.  
 Possible values:  
 - camel -> GetCustomerNameById  
 - lower_chain -> get_customer_name_by_id  
