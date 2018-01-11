@@ -1,0 +1,14 @@
+Formulas:
+
+noun = noun .append(noun+"s")
+
+verb
+verb+noun
+verb+prefix+noun
+verb+noun+postfix
+verb+prefix+noun+postfix ???
+verb+noun+by
+verb+noun+"by"+noun+"id"
+
+
+vpnpbni
